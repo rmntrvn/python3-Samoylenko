@@ -4,3 +4,8 @@
 
 MAC = 'AAAA:BBBB:CCCC'
 
+MAC = MAC.replace(":","")
+MAC_DEC = int(MAC, 16)
+MAC_BIN = bin(MAC_DEC)[2:]
+
+print(MAC_BIN)
