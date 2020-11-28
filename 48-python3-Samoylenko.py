@@ -12,3 +12,11 @@
 # 00001010 00000001 00000001 00000001
 
 IP = '192.168.3.1'
+SPLITTED_IP_DEC = IP.split('.')
+
+TEMPL_TABLE = """
+{0:<10} {1:<10} {2:<10} {3:<10}
+{0:0<10b} {1:0<10b} {2:0<10b} {3:0<10b}
+"""
+
+print(TEMPL_TABLE.format(int(SPLITTED_IP_DEC[0]), int(SPLITTED_IP_DEC[1]), int(SPLITTED_IP_DEC[2]), int(SPLITTED_IP_DEC[3])))
