@@ -21,7 +21,7 @@ BINARY_MASK_LINE = str('1' * int(MASK))
 FULL_BINARY_MASK_LINE = "{:<032}".format(BINARY_MASK_LINE)
 
 TEMPL_TABLE = """{0:<10} {1:<10} {2:<10} {3:<10}
-{0:0<10b} {1:0<10b} {2:0<10b} {3:0<10b}"""
+{0:0>8b} {1:0>8b} {2:0>8b} {3:0>8b}"""
 
 print("\nNetwork:")
 print(TEMPL_TABLE.format(int(IP[0]),
