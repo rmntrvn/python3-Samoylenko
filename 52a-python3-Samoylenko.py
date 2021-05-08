@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 # Переделать скрипт из задания 5.2 таким образом, чтобы, кроме имени устройства,
 # запрашивался также параметр устройства, который нужно отобразить.
@@ -37,12 +38,3 @@ paramName   = input("Enter parameter name: ")
 
 valueParamDeviceInfo = london_co[deviceName][paramName]
 print(valueParamDeviceInfo)
-
-
-
-
-
-
-
-
-

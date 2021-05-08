@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 
 # Задание 4.4
 # Из строк command1 и command2 получить список VLANов, 
