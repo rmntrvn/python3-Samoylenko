@@ -12,7 +12,9 @@ ignore = ['duplex', 'alias', 'Current configuration']
 
 with open(configFile, 'r') as file:
     for line in file:
-        words = line.split()
-        intersectionWords = set(words) & set(ignore)
-        if not line.startswith("!") and not intersectionWords:
-            print(line.rstrip())
+        if not line.startswith('!'):
+            for string in ignore:
+                if string in line:
+                    break
+            else:
+                print(line.rstrip())
