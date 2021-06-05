@@ -5,8 +5,6 @@
 from sys import argv
 configFile = argv[1]
 
-print(configFile)
-
 # Дополнить скрипт из задания 7.2a:
 # вместо вывода на стандартный поток вывода, скрипт должен записать полученные
 # строки в файл config_sw1_cleared.txt
