@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
+# Запускать python3 07/72b-python3-Samoylenko.py 07/config_sw1.txt
+
 from sys import argv
 configFile = argv[1]
+
+print(configFile)
 
 # Дополнить скрипт из задания 7.2a:
 # вместо вывода на стандартный поток вывода, скрипт должен записать полученные
@@ -14,7 +18,8 @@ ignore = ['duplex', 'alias', 'Current configuration']
 
 with open(configFile, 'r') as file, open('07/config_sw1_cleared.txt', 'w') as destFile:
     for line in file:
-        words = line.split()
-        intersectionWords = set(words) & set(ignore)
-        if not intersectionWords:
+        for string in ignore:
+            if string in line:
+                break
+        else:
             destFile.writelines(line)
