@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-from sys import argv
-tableMac = argv[1]
-
 # Сделать копию скрипта задания 7.3
 # Дополнить скрипт:
 # Отсортировать вывод по номеру VLAN
